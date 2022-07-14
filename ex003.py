@@ -1,7 +1,7 @@
 #Menu de jogos
 
-import ex001
-import ex002
+import forca
+import adivinhacao
 
 print('='*35)
 print('Escolha o jogo que você quer!')
@@ -15,7 +15,9 @@ jogo = int(input('Qual você quer jogar? '))
 
 if (jogo == 2):
     print('Você escolheu o jogo da forca!')
-    jogar_ex002()
+    forca.jogar()
 elif (jogo == 1):
     print('Você escolheu o jogo da adivinhação!')
-    jogar_ex001()
+    adivinhacao.jogar()
+
+#min 25 bloco 02
