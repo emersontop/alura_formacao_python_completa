@@ -1,0 +1,1 @@
+# a funcção tuple() converte uma lista em tupla e a função list() converte uma tuple em lista
