@@ -15,12 +15,12 @@ class Conta:
     def deposita(self, valor):
         self.__saldo += valor
 
-    def pode_sacar(self,valor_a_sacar):
+    def __pode_sacar(self,valor_a_sacar):
         valor_disponivel_a_sacar = self.__saldo + self.__limite
         return valor_a_sacar <= valor_disponivel_a_sacar
 
     def saca(self, valor):
-        if(self.pode_sacar(valor)):
+        if(self.__pode_sacar(valor)):
             self.__saldo -= valor
         else:
             print('O valor {} passou do limite'. format(valor))
@@ -45,4 +45,10 @@ class Conta:
     def limite(self, limite):
         self.__limite = limite
 
-        #min 25
+    @staticmethod
+    def codigo_banco():
+        return '001'
+
+    @staticmethod
+    def codigos_banco():
+        return {'BB': '001', 'Caixa':'104', 'Bradesco':'237'}
