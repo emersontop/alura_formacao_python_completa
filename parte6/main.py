@@ -1,7 +1,11 @@
-from cpf import Cpf
+#42
+from cpf_cnpj import CpfCnpj
+from validate_docbr import CNPJ
 
-cpf = '11927912407'
-objeto_cpf=Cpf(cpf)
+cpf_um = '11927912407'
+#print(cpf_um)
 
-print(objeto_cpf)
-print('teste')
+exemplo_cnpj = '35379838000112'
+#cnpj = CNPJ()
+documento = CpfCnpj(cpf_um,'cpf')
+print(documento)
