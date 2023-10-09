@@ -3,9 +3,9 @@ import sys
 class Usuario:
 
     def __init__(self, nome):
-        self.__nome = nome
+        self.__nome = nome      #atributo privado
     
-    @property
+    @property       ##property para acessar o tributo
     def nome(self):
         return self.__nome
 
